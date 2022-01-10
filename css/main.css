@@ -776,7 +776,7 @@ button:hover {
   width: 100vw;
   font-size: 0.7em;
   color: rgba(255, 255, 255, 0.836);
-  background-color: rgba(0, 0, 0, 0.808);
+  background-color: #11082cd2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
