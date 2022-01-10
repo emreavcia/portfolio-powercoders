@@ -1,0 +1,111 @@
+/*HEADER***/
+header {
+  background-image: linear-gradient(
+    to right,
+    #bcece02a,
+    #36eedf2f,
+    #f652a110,
+    #4c527021
+  );
+  position: fixed;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 1em 1em;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-list-item {
+  display: inline-block;
+  margin-left: 5vw;
+  font-size: 1.2em;
+  padding: 0.1em 0.3em;
+  /* border thickness is used when observed*/
+  border: 1px;
+}
+
+.nav-list-item a {
+  color: rgba(0, 0, 0, 0.7);
+  /* text decoration color is used when observed*/
+  text-decoration: #f65291;
+}
+
+#binoculars i {
+  font-size: 2em;
+  color: #f652a110;
+  transition: 1.1s;
+}
+#bioculars i:hover {
+  transform: scale(1.4);
+  color: #f652a110;
+}
+#social-media-container {
+  margin-right: 5vw;
+}
+
+.social-media-icon {
+  display: inline-block;
+  padding: 0.8em;
+  font-size: 1em;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+#cursor {
+  width: 3em;
+  height: 3em;
+  top: 50vh;
+  left: 50vw;
+  border: 1px solid rgb(127, 118, 167);
+  border-radius: 50%;
+  transition: 0.25s;
+  position: absolute;
+  background-color: rgba(0, 255, 255, 0.014);
+}
+
+ul:hover ~ #cursor {
+  width: 4em;
+  height: 4em;
+  border: 2px dotted #f652a1;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+  }
+
+  .nav-list-item {
+    margin-left: 1vw;
+    font-size: 0.8em;
+    padding: 0.1em 0.3em;
+    /* border thickness is used when observed*/
+    border: 1px;
+  }
+
+  #binoculars i {
+    display: none;
+  }
+
+  #social-media-container {
+    margin-right: 5vw;
+  }
+
+  .social-media-icon {
+    padding: 0.4em;
+    font-size: 0.8em;
+  }
+}
+
+/***HEADER END*/

@@ -1,0 +1,124 @@
+/*MAIN SECTION***/
+#main-section {
+  background-image: linear-gradient(
+    to right,
+    #bcecca2a,
+    #36baee2f,
+    #f6529110,
+    #4c697021
+  );
+  padding-top: 20vh;
+  height: 100vh;
+  width: 100vw;
+}
+
+#main-section-container {
+  padding: 2em 5.5em;
+  display: flex;
+  justify-content: space-around;
+}
+
+#title {
+  align-self: center;
+}
+
+#title > p:first-child {
+  color: #bcecca;
+}
+
+#title h1 {
+  font-size: 2em;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#title h1 span {
+  color: #f652a1;
+  font-size: 2em;
+}
+
+#title p {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#title p span {
+  color: #f652a1;
+  font-size: 2em;
+}
+
+.motto {
+  writing-mode: vertical-rl;
+  color: rgba(0, 0, 0, 0.13);
+  font-size: 0.01em;
+  opacity: 0;
+  transition: all 5s ease-out;
+  position: relative;
+}
+
+.reveal-item {
+  opacity: 1;
+  color: #36baee62;
+  font-size: 5em;
+}
+/***MAIN SECTION END*/
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  #main-section {
+    height: auto;
+    padding: 5em 1em 1em;
+  }
+
+  #main-section-container {
+    padding: 0 1em;
+  }
+
+  #title h1 {
+    font-size: 1em;
+  }
+
+  #title h1 span {
+    font-size: 1.5em;
+  }
+
+  #title p span {
+    font-size: 1em;
+  }
+
+  #motto {
+    font-size: 3em;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #main-section {
+    padding: 2em 1em 1em;
+  }
+
+  #motto {
+    font-size: 4em;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #main-section {
+    padding-top: 0;
+  }
+
+  #main-section-container {
+    padding: 1.7em 4.5em;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  #main-section {
+    padding-top: 2em;
+  }
+
+  #main-section-container {
+    padding: 1.7em 4.5em;
+  }
+}

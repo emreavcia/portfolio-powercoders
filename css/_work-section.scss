@@ -1,0 +1,146 @@
+/*WORK SECTION START***/
+#work-section {
+  width: 100vw;
+  height: 100vh;
+  padding: 5%;
+  background: #4c527021 url("/photos/github-image.jpg") no-repeat center;
+  background-size: 10%;
+  background-blend-mode: multiply;
+  display: flex;
+  background-position: 60% 30%;
+  justify-content: space-between;
+  align-items: center;
+}
+#check-latest-work-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#check-latest-h2 {
+  transition: all 5s ease-out;
+}
+
+.position-left {
+  position: absolute;
+  left: -999px;
+  display: none;
+}
+
+.position-right {
+  position: absolute;
+  right: -999px;
+  display: none;
+}
+
+#check-latest-work-container span {
+  color: #f652a1;
+}
+#check-latest-work-container i {
+  margin-left: 1em;
+  color: #36baee;
+}
+
+#div-github-account {
+  width: 30%;
+}
+#div-github-account img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #36baee62;
+  border-radius: 5%;
+  box-shadow: 2px 2px 2px 2px #36baee18;
+  opacity: 0.9;
+  transition: all 5s ease-out;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  #work-section {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #check-latest-work-container {
+    flex-direction: column;
+    font-size: 1.2em;
+  }
+
+  #check-latest-work-container i {
+    margin-left: 1em;
+  }
+
+  #check-latest-work-container .right {
+    display: none;
+  }
+
+  #div-github-account {
+    width: 75%;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #work-section {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #check-latest-work-container {
+    flex-direction: column;
+    font-size: 1.2em;
+  }
+
+  #check-latest-work-container i {
+    margin-left: 1em;
+  }
+
+  #check-latest-work-container .right {
+    display: none;
+  }
+
+  #div-github-account {
+    width: 75%;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #work-section {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #check-latest-work-container {
+    flex-direction: column;
+    font-size: 1.5em;
+  }
+
+  #check-latest-work-container i {
+    margin-left: 1em;
+  }
+
+  #check-latest-work-container .right {
+    display: none;
+  }
+
+  #div-github-account {
+    width: 75%;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #check-latest-work-container .down {
+    display: none;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  #check-latest-work-container .down {
+    display: none;
+  }
+}
+
+/***WORK SECTION END*/

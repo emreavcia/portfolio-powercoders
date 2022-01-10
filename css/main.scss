@@ -1,0 +1,15 @@
+@import "typography";
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+@import "general-setting";
+@import "custom-classes";
+@import "header";
+@import "main-section";
+@import "work-section";
+@import "about-section";
+@import "contact-section";
+@import "footer";

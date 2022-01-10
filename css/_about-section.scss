@@ -1,0 +1,159 @@
+/*ABOUT SECTION START***/
+#about-section {
+  padding: 5%;
+  background: #36baee2f;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.about-section-container {
+  margin-bottom: 5em;
+}
+
+.career {
+  display: flex;
+  justify-content: center;
+}
+
+.career i,
+.education i,
+.courses i {
+  margin-right: 0.3em;
+}
+
+.career ul,
+.education ul,
+.courses ul {
+  list-style: none;
+}
+
+.education {
+  display: flex;
+}
+
+.courses,
+.certificates {
+  display: flex;
+  justify-content: center;
+}
+
+.certificates img {
+  width: 1.3em;
+  height: 1em;
+}
+
+.certificates ul {
+  list-style: url("/photos/certificate-icon.svg");
+}
+
+#resume {
+  text-decoration: none;
+  color: #f65291;
+  font-size: 2em;
+}
+
+.arrow-resume {
+  color: #36baeec4;
+  transition: all 0.5s;
+}
+
+.arrow-resume-interval {
+  color: #f65291;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  #about-section {
+    flex-wrap: nowrap;
+    height: auto;
+  }
+
+  .about-section-container {
+    margin-bottom: 1em;
+  }
+
+  .certificates {
+    margin-bottom: 1em;
+  }
+
+  #resume {
+    font-size: 1em;
+  }
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #about-section {
+    flex-wrap: nowrap;
+    height: auto;
+  }
+
+  .about-section-container {
+    margin-bottom: 1em;
+  }
+
+  .certificates {
+    margin-bottom: 1em;
+  }
+
+  #resume {
+    font-size: 1em;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #about-section {
+    height: auto;
+  }
+
+  .about-section-container {
+    margin-bottom: 3em;
+  }
+
+  .certificates {
+    margin-bottom: 1.5em;
+  }
+
+  #resume {
+    font-size: 1.5em;
+  }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #about-section {
+    height: auto;
+  }
+
+  .about-section-container {
+    margin-bottom: 3em;
+  }
+
+  .certificates {
+    margin-bottom: 1.5em;
+  }
+
+  #resume {
+    font-size: 1.7em;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .about-section-container {
+    margin-bottom: 2em;
+  }
+  .about-section-container ul li {
+  }
+  .certificates {
+    margin-bottom: 1.5em;
+  }
+
+  #resume {
+    font-size: 1em;
+  }
+}
