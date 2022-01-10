@@ -7,12 +7,13 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: auto;
   width: 100vw;
 }
 
 .about-section-container {
   margin-bottom: 5em;
+  margin-top: 2em;
 }
 
 .career {
@@ -144,16 +145,26 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+  #about-section {
+    flex-direction: row;
+  }
   .about-section-container {
     margin-bottom: 2em;
   }
-  .about-section-container ul li {
+  .career,
+  .courses,
+  .education {
+    flex: 50%;
   }
+
   .certificates {
     margin-bottom: 1.5em;
+    flex: 50%;
+    justify-content: flex-start;
   }
 
   #resume {
     font-size: 1em;
+    flex: 100%;
   }
 }

@@ -474,12 +474,13 @@ ul:hover ~ #cursor {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
+  height: auto;
   width: 100vw;
 }
 
 .about-section-container {
   margin-bottom: 5em;
+  margin-top: 2em;
 }
 
 .career {
@@ -609,20 +610,42 @@ ul:hover ~ #cursor {
 }
 
 @media (min-width: 1200px) {
+  #about-section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
   .about-section-container {
     margin-bottom: 2em;
   }
+  .career,
+  .courses,
+  .education {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+  }
   .certificates {
     margin-bottom: 1.5em;
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   #resume {
     font-size: 1em;
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
   }
 }
 
 /*CONTACT SECTION START***/
 #contact-section {
-  padding: 12.5% 15%;
+  padding: 8% 15%;
   background: #36baee62;
   display: -webkit-box;
   display: -ms-flexbox;
