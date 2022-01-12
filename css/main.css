@@ -250,16 +250,16 @@ ul:hover ~ #cursor {
     padding: 0 1em;
   }
   #title h1 {
-    font-size: 1em;
+    font-size: 0.8em;
   }
   #title h1 span {
-    font-size: 1.5em;
+    font-size: 1.1em;
   }
   #title p span {
-    font-size: 1em;
+    font-size: 0.7em;
   }
   #motto {
-    font-size: 3em;
+    font-size: 2em;
   }
 }
 
@@ -382,7 +382,7 @@ ul:hover ~ #cursor {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    font-size: 1.2em;
+    font-size: 0.8em;
   }
   #check-latest-work-container i {
     margin-left: 1em;
@@ -391,7 +391,7 @@ ul:hover ~ #cursor {
     display: none;
   }
   #div-github-account {
-    width: 75%;
+    width: 40%;
   }
 }
 
