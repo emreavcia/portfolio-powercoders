@@ -83,6 +83,7 @@ ul:hover ~ #cursor {
 @media (max-width: 575.98px) {
   nav {
     display: flex;
+    width: auto;
     justify-content: space-between;
     padding: 1em;
   }
@@ -111,11 +112,19 @@ ul:hover ~ #cursor {
   #cursor {
     display: none;
   }
+  #motto {
+    font-size: 1em;
+  }
 }
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {
   #main-section {
     height: auto;
+    width: auto;
+  }
+
+  #motto {
+    font-size: 1em;
   }
 
   #cursor {
