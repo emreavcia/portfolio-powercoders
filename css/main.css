@@ -573,8 +573,12 @@ ul:hover ~ #cursor {
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   #about-section {
+    height: auto;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     height: auto;
   }
   .about-section-container {
