@@ -439,7 +439,7 @@ ul:hover ~ #cursor {
     display: none;
   }
   #div-github-account {
-    width: 75%;
+    width: 50%;
   }
 }
 
