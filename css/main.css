@@ -770,6 +770,8 @@ button:hover {
 @media (min-width: 1200px) {
   #contact-section {
     height: auto;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
