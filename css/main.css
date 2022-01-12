@@ -410,7 +410,7 @@ ul:hover ~ #cursor {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    font-size: 1.2em;
+    font-size: 0.8em;
   }
   #check-latest-work-container i {
     margin-left: 1em;
@@ -419,7 +419,7 @@ ul:hover ~ #cursor {
     display: none;
   }
   #div-github-account {
-    width: 75%;
+    width: 40%;
   }
 }
 
