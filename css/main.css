@@ -28,6 +28,7 @@ header {
   background-image: -webkit-gradient(linear, left top, right top, from(#bcece02a), color-stop(#36eedf2f), color-stop(#f652a110), to(#4c527021));
   background-image: linear-gradient(to right, #bcece02a, #36eedf2f, #f652a110, #4c527021);
   position: fixed;
+  height: auto;
   width: 100%;
 }
 
@@ -149,18 +150,6 @@ ul:hover ~ #cursor {
 @media (min-width: 768px) and (max-width: 991.98px) {
   #cursor {
     display: none;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  #contact-section {
-    height: auto;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-  #letsContact h3,
-  p {
-    margin-bottom: 1em;
   }
 }
 
@@ -582,6 +571,10 @@ ul:hover ~ #cursor {
 @media (min-width: 768px) and (max-width: 991.98px) {
   #about-section {
     height: auto;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 7.2em;
   }
   .about-section-container {
     margin-bottom: 3em;
@@ -597,6 +590,10 @@ ul:hover ~ #cursor {
 @media (min-width: 992px) and (max-width: 1199.98px) {
   #about-section {
     height: auto;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 10em;
   }
   .about-section-container {
     margin-bottom: 3em;
@@ -604,7 +601,7 @@ ul:hover ~ #cursor {
   .certificates {
     margin-bottom: 1.5em;
   }
-  #resume {
+  .courses #resume {
     font-size: 1.7em;
   }
 }
@@ -767,6 +764,12 @@ button:hover {
   #letsContact h3,
   p {
     margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 1200px) {
+  #contact-section {
+    height: auto;
   }
 }
 
